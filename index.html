@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta name="description" lang="ko" content="1학기 2차 지필평가 시험범위">
+	<meta name="apple-mobile-web-app-title" content="시험범위">
+	<meta name="viewport" content="width=device-width">
+	
+	<meta property="og:title" content="시험범위">
+	<meta property="og:description" content="1학기 2차 지필평가 시험범위"/>
+	
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	
+	<meta charset="utf-8">
+	
+	<script language="javascript">
+		document.oncontextmenu = function(e) {
+			return false;
+		}
+		var subject_range = [ ['문학', '교과서 ~ 90p까지'], ['영어I', '1, 2과 본문과 4과 본문 첫 페이지'], 
+		['수학I', '교과서 42p ~ 63p'], ['경제', '교과서 ~ 61p까지 (프린트도 참고)'], 
+		['통합과학', '과학1(생명과학): 5단원 [생명 시스템]<br>과학2(물리학): 교과서 3단원 [역학적 시스템]<br>과학3(지구과학): 1단원 [물질의 규칙성과 결합]<br>과학4(화학): 6단원 [화학 변화]'], 
+		['일본어I', '교과서 ~ 69p까지 (프린트도 참고)'], ['회계정보 처리 시스템', ''], 
+		['정보처리와 관리', ''], ['영화 콘텐츠 제작', ''], 
+		['응용 프로그래밍 개발', ''], ['컴퓨터 시스템 일반', '진법 ~ 논리회로'] ];
+		var i;
+		function writeCell() {
+			for (i=0; i<=subject_range.length; i++) {
+				document.write('<tr>');
+				document.write('<td>'+subject_range[i][0]+'</td>');
+				document.write('<td>'+subject_range[i][1]+'</td>');
+				document.write('</tr>');
+			}
+		}
+	</script>
+	
+	<title>시험범위</title>
+	
+	<style type="text/css">
+		body { text-align:center; }
+		table { width:300px; }
+		th { background-color:cyan; }
+	</style>
+</head>
+
+<body>
+	<h1>1학기 2차 지필평가 시험범위</h1>
+	<table border="1" align="center">
+		<tr>
+			<th style="width:100px;">교과목</th>
+			<th style="width:200px;">시험범위</th>
+		</tr>
+		<script language="javascript">
+			writeCell();
+		</script>
+	</table>
+</body>
+</html>
