@@ -36,7 +36,7 @@
 		function writeCell() {
 			for (i=0; i<=subject_range.length; i++) {
 				document.write('<tr>');
-				document.write('<td>'+subject_range[i][0]+'</td>');
+				document.write('<td class="subject"><b>'+subject_range[i][0]+'</b></td>');
 				document.write('<td>'+subject_range[i][1]+'</td>');
 				document.write('</tr>');
 			}
@@ -49,6 +49,7 @@
 		body { text-align:center; }
 		table { width:300px; }
 		th { background-color:cyan; }
+                .subject { background-color: cyan; }
 	</style>
 </head>
 
